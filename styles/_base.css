@@ -1,11 +1,67 @@
-span {
-  font-family: 'Instrument Serif';
-  font-weight: 400;
-  font-style: normal;
+body {
+  background: var(--white-co);
 }
 
-p {
-  font-family: "Manrope";
-  font-weight: 500;
-  font-style: normal;
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.logo {
+  z-index: 9999;
+  flex-shrink: 0;
+}
+
+.logo__icon {
+  fill: var(--black-co);
+
+  &:hover {
+    fill: var(--green-co);
+  }
+}
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.nav__list-item {}
+
+.nav__list-link {
+  position: relative;
+  display: inline-block;
+  font-family: 'Manrope', sans-serif;
+  font-size: var(--f-size-1);
+  color: var(--black-co);
+
+  &:hover {
+    color: var(--green-co);
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--green-co);
+    opacity: 0;
+    scale: 0;
+    transform-origin: center;
+    transition: scale .3s, opacity .3s;
+  }
+
+  &:hover::after {
+    scale: 1;
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__list {
+    flex-direction: column;
+  }
 }

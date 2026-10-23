@@ -19,3 +19,25 @@
     font-style: italic;
     font-display: swap;
 }
+
+:root {
+    /* colors */
+    --white-co: #f8f7f3;
+    --black-co: #282A24;
+    --green-co: #8B9173;
+    --beige-co: #efefe8;
+
+    /* fonts */
+    --f-size-1: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+    --f-size-2: clamp(1.25rem, 1.1rem + 0.7vw, 1.5rem);
+    --f-size-3: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
+    --f-size-4: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+
+    /* media breakpoints */
+    --m-min: 428px;
+    --m-sm: 576px;
+    --m-md: 768px;
+    --m-lg: 992px;
+    --m-xl: 1200px;
+    --m-xxl: 1400px;
+}

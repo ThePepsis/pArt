@@ -22,13 +22,76 @@
 </head>
 
 <body>
-  <span>Немного о pArt.</span>
-  <p>pArt — современная онлайн-платформа в сфере современного искусства, дизайна и авторских постеров. Сайт объединяет
-    независимых художников и дизайнеров с людьми, которые хотят приобрести уникальное произведение искусства или
-    заказать работу, созданную специально для них.</p>
-  <svg>
-    <use href="./assets/icons/sprites.svg#logo-icon"></use>
-  </svg>
+  <header class="header">
+    <div class="container header__content">
+
+      <a href="./index.html" class="logo" aria-label="pArt — на главную">
+        <svg class="logo__icon" width="63" height="44" aria-hidden="true">
+          <use href="./assets/icons/sprites.svg#logo-icon"></use>
+        </svg>
+      </a>
+
+      <nav class="header__nav nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="./index.html" class="nav__list-link">О pArt</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="./index.html" class="nav__list-link">Художники</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="./index.html" class="nav__list-link">Галерея</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="./index.html" class="nav__list-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="mob-menu">
+      <label for="burger-id" class="mob-menu__burger">
+        <svg class="mob-menu__burger-icon" width="27" height="22" aria-hidden="true">
+          <use href="./assets/icons/sprites.svg#burger-icon"></use>
+        </svg>
+      </label>
+
+      <input class="mob-menu__toggler" type="checkbox" id="burger-id">
+
+      <nav class="mob-menu__nav nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="./index.html" class="nav__list-link">О pArt</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="./index.html" class="nav__list-link">Художники</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="./index.html" class="nav__list-link">Галерея</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="./index.html" class="nav__list-link">Контакты</a>
+          </li>
+        </ul>
+
+        <label class="mob-menu__cross" for="burger-id">
+          <svg class="mob-menu__cross-icon" width="25" height="22" aria-hidden="true">
+            <use href="./assets/icons/sprites.svg#cross-icon"></use>
+          </svg>
+        </label>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- <img src="https://images.wallpaperscraft.com/image/single/rock_sea_sunset_1312633_3840x2400.jpg" alt=""> -->
+  </main>
 </body>
 
 </html>
