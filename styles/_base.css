@@ -8,16 +8,18 @@ body {
 }
 
 .logo {
-  z-index: 9999;
+  display: inline-flex;
   flex-shrink: 0;
+  color: var(--black-co);
+
+  &:hover,
+  &:focus-visible {
+    color: var(--green-co);
+  }
 }
 
 .logo__icon {
-  fill: var(--black-co);
-
-  &:hover {
-    fill: var(--green-co);
-  }
+  fill: currentColor;
 }
 
 .nav__list {
@@ -26,8 +28,6 @@ body {
   align-items: center;
   gap: 50px;
 }
-
-.nav__list-item {}
 
 .nav__list-link {
   position: relative;
@@ -57,11 +57,5 @@ body {
   &:hover::after {
     scale: 1;
     opacity: 1;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav__list {
-    flex-direction: column;
   }
 }

@@ -34,10 +34,10 @@
     --f-size-4: clamp(2rem, 1.5rem + 2.5vw, 3rem);
 
     /* media breakpoints */
-    --m-min: 428px;
+    /* --m-min: 428px;
     --m-sm: 576px;
     --m-md: 768px;
     --m-lg: 992px;
     --m-xl: 1200px;
-    --m-xxl: 1400px;
+    --m-xxl: 1400px; */
 }

@@ -23,7 +23,7 @@
 
 <body>
   <header class="header">
-    <div class="container header__content">
+    <div class="container header__container">
 
       <a href="./index.html" class="logo" aria-label="pArt — на главную">
         <svg class="logo__icon" width="63" height="44" aria-hidden="true">
@@ -50,18 +50,26 @@
           </li>
         </ul>
       </nav>
-    </div>
 
-    <div class="mob-menu">
-      <label for="burger-id" class="mob-menu__burger">
-        <svg class="mob-menu__burger-icon" width="27" height="22" aria-hidden="true">
+      <button class="header__burger" type="button" popovertarget="mob-menu-id" aria-label="Открыть меню навигации">
+        <svg class="header__burger-icon" width="27" height="22" aria-hidden="true">
           <use href="./assets/icons/sprites.svg#burger-icon"></use>
         </svg>
-      </label>
+      </button>
+    </div>
+  </header>
 
-      <input class="mob-menu__toggler" type="checkbox" id="burger-id">
 
-      <nav class="mob-menu__nav nav" aria-label="Основная навигация">
+  <div class="mob-menu" id="mob-menu-id" popover="auto">
+    <div class="mob-menu__inner">
+      <button class="mob-menu__close" type="button" popovertarget="mob-menu-id" popovertargetaction="hide"
+        aria-label="Закрыть меню навигации">
+        <svg class="mob-menu__close-icon" width="25" height="22" aria-hidden="true">
+          <use href="./assets/icons/sprites.svg#cross-icon"></use>
+        </svg>
+      </button>
+
+      <nav class="nav" aria-label="Мобильная навигация">
         <ul class="nav__list">
           <li class="nav__list-item">
             <a href="./index.html" class="nav__list-link">О pArt</a>
@@ -79,15 +87,10 @@
             <a href="./index.html" class="nav__list-link">Контакты</a>
           </li>
         </ul>
-
-        <label class="mob-menu__cross" for="burger-id">
-          <svg class="mob-menu__cross-icon" width="25" height="22" aria-hidden="true">
-            <use href="./assets/icons/sprites.svg#cross-icon"></use>
-          </svg>
-        </label>
       </nav>
+
     </div>
-  </header>
+  </div>
 
   <main>
     <!-- <img src="https://images.wallpaperscraft.com/image/single/rock_sea_sunset_1312633_3840x2400.jpg" alt=""> -->
