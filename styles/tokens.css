@@ -25,13 +25,30 @@
     --white-co: #f8f7f3;
     --black-co: #282A24;
     --green-co: #8B9173;
+    --dark-green-co: #73756C;
+    --light-green-co: #d7dcc8;
     --beige-co: #efefe8;
 
     /* fonts */
-    --f-size-1: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
-    --f-size-2: clamp(1.25rem, 1.1rem + 0.7vw, 1.5rem);
-    --f-size-3: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
-    --f-size-4: clamp(2rem, 1.5rem + 2.5vw, 3rem);
+    /* 7-9px */
+    --f-size-0: clamp(0.425rem, 0.25rem + 0.4vw, 0.55rem);
+
+    /* 8-13px */
+    --f-size-1: clamp(0.525rem, 0.25rem + 0.6vw, 0.85rem);
+
+    /* 14-16px */
+    --f-size-2: clamp(0.85rem, 0.45rem + 0.8vw, 1rem);
+
+    /* 20-56px */
+    --f-size-3: clamp(1.25rem, 0.25rem + 2.5vw, 1.7rem);
+
+    /* 64-105px */
+    --f-size-4: clamp(4rem, 0.5rem + 7.7vw, 6.5rem);
+
+    /* space */
+    --s-1: clamp(1.5rem, 0.5rem + 5vw, 6rem);
+
+    --s-2: clamp(1.25rem, 0.5rem + 3vw, 2.5rem);
 
     /* media breakpoints */
     /* --m-min: 428px;

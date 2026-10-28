@@ -1,5 +1,14 @@
 body {
   background: var(--white-co);
+
+  &::selection {
+    background: var(--light-green-co);
+  }
+}
+
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 4px;
 }
 
 .container {
@@ -33,7 +42,8 @@ body {
   position: relative;
   display: inline-block;
   font-family: 'Manrope', sans-serif;
-  font-size: var(--f-size-1);
+  font-weight: 400;
+  font-size: var(--f-size-2);
   color: var(--black-co);
 
   &:hover {
@@ -58,4 +68,76 @@ body {
     scale: 1;
     opacity: 1;
   }
+}
+
+.title {
+  padding: 10px 0 30px;
+  font-size: var(--f-size-3);
+  font-family: 'Instrument Serif', serif;
+  color: var(--black-co);
+  font-weight: 400;
+  line-height: 1;
+}
+
+.subtitle {
+  font-size: var(--f-size-1);
+  font-family: 'Manrope', sans-serif;
+  color: var(--black-co);
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-wrap: nowrap;
+}
+
+.description {
+  font-size: var(--f-size-2);
+  font-family: 'Manrope', sans-serif;
+  color: var(--dark-green-co);
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.button {
+  text-wrap: nowrap;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-family: 'Manrope', sans-serif;
+  font-size: var(--f-size-2);
+}
+
+.button--dark {
+  color: var(--white-co);
+  background: var(--black-co);
+  font-weight: 500;
+  transition: background .2s;
+
+  &:hover {
+    background: var(--green-co);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--black-co);
+  }
+}
+
+.button--light {
+  color: var(--black-co);
+  background: var(--white-co);
+  font-weight: 400;
+
+  &:hover {
+    outline: 2px solid var(--black-co);
+  }
+}
+
+.arrow--rightup {
+  rotate: -45deg;
+}
+
+.arrow--rightup,
+.arrow--right {
+  flex-shrink: 0;
 }
