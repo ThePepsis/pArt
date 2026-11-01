@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="./styles/base.css">
   <link rel="stylesheet" href="./styles/header.css">
   <link rel="stylesheet" href="./styles/hero.css">
+  <link rel="stylesheet" href="./styles/about.css">
 
   <title>pArt — авторские постеры</title>
 </head>
@@ -35,7 +36,7 @@
       <nav class="header__nav nav" aria-label="Основная навигация">
         <ul class="nav__list">
           <li class="nav__list-item">
-            <a href="./index.html" class="nav__list-link">О pArt</a>
+            <a href="./index.html#about-id" class="nav__list-link">О pArt</a>
           </li>
 
           <li class="nav__list-item">
@@ -73,7 +74,7 @@
       <nav class="nav" aria-label="Мобильная навигация">
         <ul class="nav__list">
           <li class="nav__list-item">
-            <a href="./index.html" class="nav__list-link">О pArt</a>
+            <a href="./index.html#about-id" class="nav__list-link">О pArt</a>
           </li>
 
           <li class="nav__list-item">
@@ -139,21 +140,21 @@
 
               <img src="./assets/images/text_5.webp" class="hero__preview-img"
                 alt="Постер «Серый ноябрь». Автор - Лиа @themidnightseas" width="300" height="400" fetchpriority="high"
-                decoding="async">
+                decoding="sync">
             </a>
 
             <a href="#" class="hero__preview-card card--2" target="_blank" rel="noopener noreferrer">
 
               <img src="./assets/images/flat_8.webp" class="hero__preview-img"
                 alt="Постер «Майнкрафт - компьютерная игра». Автор - Крис @Hritikdesign" width="300" height="400"
-                fetchpriority="high" decoding="async">
+                fetchpriority="high" decoding="sync">
             </a>
 
             <a href="#" class="hero__preview-card card--3" target="_blank" rel="noopener noreferrer">
 
               <img src="./assets/images/real_4.webp" class="hero__preview-img"
                 alt="Постер «Офелия и кувшинки». Автор - Артур @atbzdesign" width="300" height="400"
-                fetchpriority="high" decoding="async">
+                fetchpriority="high" decoding="sync">
             </a>
 
           </div>
@@ -161,26 +162,141 @@
       </div>
 
 
-      <div class="hero__slogan">
+      <footer class="hero__slogan">
         <div class="hero__slogan-container container">
-          <span class="hero__slogan-subtitle subtitle">
+          <p class="hero__slogan-subtitle subtitle">
             НЕ ПРОСТО УКРАШЕНИЕ ДЛЯ СТЕНЫ.
-          </span>
-          <span class="hero__slogan-title title">
+          </p>
+          <p class="hero__slogan-title title">
             То, в чём вы узнаёте себя.
-          </span>
-          <span class="hero__slogan-subtitle subtitle">
+          </p>
+          <p class="hero__slogan-subtitle subtitle">
             ИСКУССТВО, КОТОРОЕ СБЛИЖАЕТ.
-          </span>
+          </p>
         </div>
-      </div>
+      </footer>
 
     </section>
 
 
+    <section class="about" id="about-id">
+      <div class="about__container container">
+
+        <span class="about__subtitle subtitle">
+          ИСКУССТВО. ЛЮДИ. СОПРИЧАСТНОСТЬ.
+        </span>
+
+        <h2 class="about__title title">
+          Немного о <span>pArt.</span>
+        </h2>
+
+        <div class="about__wrapper">
+          <div class="about__inner">
+            <h3 class="about__h3 title">
+              Идея сайта
+            </h3>
+
+            <p class="about__desc description">
+              Главная идея pArt — сделать авторское искусство доступным для покупки и одновременно дать художникам
+              возможность представить свои работы широкой аудитории.
+            </p>
+
+            <p class="about__desc description">
+              Пользователь может просто выбрать понравившуюся готовую картину или постер и приобрести её, а если он
+              хочет
+              что-то уникальное — найти подходящего художника и заказать индивидуальную работу в его стиле.
+            </p>
+
+            <p class="about__desc description">
+              Название pArt объединяет слова «part» и «art» и отражает основную концепцию бренда: каждый пользователь
+              может
+              стать частью мира искусства.
+            </p>
+
+            <p class="about__desc description">
+              Сайт должен создавать ощущение современной арт-галереи и творческого сообщества, а не обычного
+              интернет-магазина. Главный акцент — на визуальной подаче произведений, индивидуальности художников и их
+              авторском стиле.
+            </p>
+          </div>
+
+          <img class="about__img" src="./assets/images/wall_with_posters.jpg" alt="Вариант украшения стены постерами"
+            width="700" height="300" loading="lazy" decoding="async">
+        </div>
+
+        <div class="about__inner">
+          <h3 class="about__h3 title">
+            Целевая аудитория
+          </h3>
+
+          <p class="about__desc description">
+            Молодые люди и взрослые, которые интересуются современным искусством, дизайном и визуальной эстетикой, хотят
+            украсить
+            интерьер оригинальным постером или картиной либо ищут художника для создания индивидуальной работы.
+          </p>
+        </div>
+
+        <div class="about__inner">
+          <h3 class="about__title title">
+            Почему выбирают <span>pArt.</span>
+          </h3>
+
+          <div class="about__accordion">
+            <details class="about__accordion-details">
+              <summary class="about__accordion-title title">Уникальные работы</summary>
+              <p class="about__accordion-desc description">
+                У нас представлены авторские работы, которые отличаются от массовых товаров из обычных магазинов. Полная
+                творческая свобода!
+              </p>
+            </details>
+
+            <details class="about__accordion-details">
+              <summary class="about__accordion-title title">Разнообразие стилей</summary>
+              <p class="about__accordion-desc description">
+                Каждый сможет найти что-то по своему вкусу: от минимализма и абстракции до ярких иллюстраций и
+                современных
+                диджитал постеров.
+              </p>
+            </details>
+
+            <details class="about__accordion-details">
+              <summary class="about__accordion-title title">Индивидуальный подход</summary>
+              <p class="about__accordion-desc description">
+                Можно не только купить готовую работу, но и заказать у художника собственный дизайн по своим пожеланиям.
+              </p>
+            </details>
+
+            <details class="about__accordion-details">
+              <summary class="about__accordion-title title">Знакомство с авторами</summary>
+              <p class="about__accordion-desc description">
+                У каждого художника есть собственная страница с его портфолио, описанием и отзывами. Покупатель знает,
+                чью
+                работу приобретает.
+              </p>
+            </details>
+
+            <details class="about__accordion-details">
+              <summary class="about__accordion-title title">Удобный выбор</summary>
+              <p class="about__accordion-desc description">
+                Все работы собраны в одном месте, поэтому не нужно искать художников и интересные произведения на разных
+                площадках.
+              </p>
+            </details>
+
+            <details class="about__accordion-details">
+              <summary class="about__accordion-title title">Поддержка начинающих художников</summary>
+              <p class="about__accordion-desc description">
+                Платформа помогает авторам показать свои работы, найти аудиторию и получить новых клиентов.
+              </p>
+            </details>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
 
-    
+
   </main>
 </body>
 

@@ -24,7 +24,7 @@
 }
 
 .hero__content-title {
-  font-size: var(--f-size-4);
+  font-size: var(--f-size-5);
   letter-spacing: -1px;
   line-height: 1.05;
 }
@@ -126,7 +126,7 @@
 }
 
 .hero__slogan {
-  outline: 1px solid var(--green-co);
+  border: 1px solid var(--green-co);
 }
 
 .hero__slogan-container {
