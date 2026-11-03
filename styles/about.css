@@ -23,6 +23,7 @@
 
 .about__title span {
   font-style: italic;
+  letter-spacing: -3px;
 }
 
 .about__h3 {}
@@ -46,20 +47,32 @@
 
 .about__accordion-details {
   border-bottom: 1px solid var(--green-co);
-  border-radius: 50px;
+
+  &[open] .about__accordion-title::before {
+    rotate: 45deg;
+  }
 }
 
 .about__accordion-title {
+  list-style: none;
   padding: var(--s-2);
-  background: var(--white-co);
   transition: color .2s;
+  cursor: pointer;
+  position: relative;
+
+  &::before {
+  content: '+'; 
+  position: absolute;
+  transition: rotate .3s;
+  translate: 0 -50%;
+  top: 50%;
+  right: 5%;
+  scale: 1.5;
+  display: inline-block;
+  color: var(--green-co);
+}
 
   &:hover {
-    cursor: pointer;
-    color: var(--green-co);
-  }
-
-  &::marker {
     color: var(--green-co);
   }
 }

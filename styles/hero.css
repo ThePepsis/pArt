@@ -1,5 +1,5 @@
 .hero__container {
-  padding: var(--s-1) 30px;
+  padding: var(--s-1) 15px;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -25,8 +25,7 @@
 
 .hero__content-title {
   font-size: var(--f-size-5);
-  letter-spacing: -1px;
-  line-height: 1.05;
+  letter-spacing: -5px;
 }
 
 .hero__content-title span {
@@ -171,7 +170,12 @@
   }
 }
 
-@media (max-width: 428px) {
+@media (max-width: 400px) {
+
+  .hero__content-title {
+    font-size: 4rem;
+  }
+
   .hero__slogan-container {
     justify-content: center;
   }

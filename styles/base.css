@@ -14,6 +14,7 @@ body {
 .container {
   max-width: 1400px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .logo {
@@ -73,9 +74,9 @@ body {
 .title {
   padding: 10px 0 30px;
   font-size: var(--f-size-3);
-  font-family: 'Instrument Serif', serif;
+  font-family: 'Cormorant', serif;
   color: var(--black-co);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1;
 }
 
