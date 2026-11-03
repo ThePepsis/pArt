@@ -8,16 +8,23 @@
 }
 
 .header__container {
-  padding: 30px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
 
-.header__burger {
-  display: none;
+.header__inner {
   color: var(--black-co);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__cart,
+.header__burger {
   padding: 10px;
   margin: -10px;
 
@@ -27,19 +34,31 @@
   }
 }
 
+.header__burger {
+  display: none;
+}
+
 .mob-menu {
   position: fixed;
   inset: 0;
   width: 100%;
-  height: 100dvh;
+  height: 50dvh;
   margin: 0;
   padding: 0;
   border: 0;
-  border-left: 10px solid var(--green-co);
-  background: var(--white-co);
+  border-bottom: 10px solid var(--green-co);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background: #ffffff00;
+
+  opacity: 0;
+  translate: 0 -100%;
+
   transition:
     opacity .3s ease,
-    translate .3s ease;
+    translate .3s ease,
+    display .3s allow-discrete,
+    overlay .3s allow-discrete;
 
   &:popover-open {
     opacity: 1;
@@ -50,7 +69,7 @@
 @starting-style {
   .mob-menu:popover-open {
     opacity: 0;
-    translate: 100% 0;
+    translate: 0 -100%;
   }
 }
 
@@ -65,8 +84,8 @@
 
 .mob-menu__close {
   position: absolute;
-  top: 40px;
-  right: 30px;
+  top: 30px;
+  right: 20px;
   color: var(--black-co);
   padding: 10px;
   margin: -10px;
@@ -76,7 +95,6 @@
     color: var(--green-co);
   }
 }
-
 
 @media (max-width: 768px) {
   .header__nav {

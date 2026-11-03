@@ -1,9 +1,10 @@
+*::selection {
+  background: var(--light-green-co);
+  color: var(--black-co);
+}
+
 body {
   background: var(--white-co);
-
-  &::selection {
-    background: var(--light-green-co);
-  }
 }
 
 :focus-visible {
@@ -14,7 +15,6 @@ body {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .logo {
@@ -72,7 +72,7 @@ body {
 }
 
 .title {
-  padding: 10px 0 30px;
+  padding: 5px 0 var(--s-3);
   font-size: var(--f-size-3);
   font-family: 'Cormorant', serif;
   color: var(--black-co);
@@ -87,7 +87,7 @@ body {
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
-  text-wrap: nowrap;
+  /* text-wrap: nowrap; */
 }
 
 .description {
@@ -141,4 +141,28 @@ body {
 .arrow--rightup,
 .arrow--right {
   flex-shrink: 0;
+}
+
+.card--1 {
+  z-index: 1;
+  translate: -75% -60%;
+  rotate: -10deg;
+  scale: 0.8;
+  background: var(--dark-green-co);
+}
+
+.card--2 {
+  z-index: 2;
+  translate: -30% -55%;
+  rotate: 5deg;
+  scale: 1;
+  background: var(--green-co);
+}
+
+.card--3 {
+  z-index: 3;
+  translate: -55% -20%;
+  rotate: -5deg;
+  scale: 0.7;
+  background: var(--black-co);
 }
