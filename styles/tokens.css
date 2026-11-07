@@ -18,12 +18,12 @@
     --f-size-2: clamp(0.85rem, 0.45rem + 0.8vw, 1rem);
 
     /* 20-32px */
-    --f-size-3: clamp(1.25rem, 0.25rem + 2.5vw, 2rem);
+    --f-size-3: clamp(1.25rem, 0.5rem + 2.5vw, 2rem);
 
-    /* 28-56px */
-    --f-size-4: clamp(1.75rem, 0.5rem + 3vw, 3.5rem);
+    /* 30-56px */
+    --f-size-4: clamp(1.85rem, 0.5rem + 4vw, 3.5rem);
 
-    /* 64-105px */
+    /* 80-104px */
     --f-size-5: clamp(5rem, 0.5rem + 7.7vw, 6.5rem);
 
     /* space */

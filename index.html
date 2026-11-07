@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="./styles/header.css">
   <link rel="stylesheet" href="./styles/hero.css">
   <link rel="stylesheet" href="./styles/about.css">
+  <link rel="stylesheet" href="./styles/artists.css">
 
   <title>pArt — авторские постеры</title>
 </head>
@@ -40,7 +41,7 @@
           </li>
 
           <li class="nav__list-item">
-            <a href="./index.html" class="nav__list-link">Художники</a>
+            <a href="./index.html#artists-id" class="nav__list-link">Художники</a>
           </li>
 
           <li class="nav__list-item">
@@ -73,7 +74,7 @@
 
   <div class="mob-menu" id="mob-menu-id" popover="auto">
     <div class="mob-menu__inner">
-      
+
       <button class="mob-menu__close" type="button" popovertarget="mob-menu-id" popovertargetaction="hide"
         aria-label="Закрыть меню навигации">
         <svg class="mob-menu__close-icon" width="25" height="22" aria-hidden="true">
@@ -88,7 +89,7 @@
           </li>
 
           <li class="nav__list-item">
-            <a href="./index.html" class="nav__list-link">Художники</a>
+            <a href="./index.html#artists-id" class="nav__list-link">Художники</a>
           </li>
 
           <li class="nav__list-item">
@@ -305,6 +306,122 @@
       </div>
     </section>
 
+
+    <section class="artists" id="artists-id">
+      <div class="artists__container container">
+
+        <div class="artists__header">
+
+          <div class="artists__inner">
+            <span class="artists__header-subtitle subtitle">
+              ЗА КАЖДОЙ РАБОТОЙ — ЧЕЛОВЕК
+            </span>
+
+            <h2 class="artists__header-title title">
+              Знакомьтесь с художниками.
+            </h2>
+
+            <p class="artists__header-desc description">
+              Разные взгляды. Узнаваемый почерк. Общая любовь к творчеству.
+            </p>
+          </div>
+
+          <div class="artists__inner">
+            <a class="artists__header-link link--underline" href="#" target="_blank" rel="noopener noreferrer">
+              Все художники
+
+              <svg class="artists__header-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="artists__cards">
+
+          <a class="artists__card" href="./index.html" target="_blank" rel="noopener noreferrer">
+
+            <div class="artists__card-preview">
+              <img class="artists__card-artist-img" src="./assets/images/flat_artist.webp" alt="Крис @Hritikdesign"
+                width="300" height="300" loading="lazy" decoding="async">
+
+              <img class="artists__card-poster-img" src="./assets/images/flat_5.webp"
+                alt="Постер к фильму «Дюна». Автор - Крис @Hritikdesign" width="150" height="150" loading="lazy"
+                decoding="async">
+            </div>
+
+            <div class="artists__card-info">
+              <h3 class="artists__card-title title">
+                Крис @Hritikdesign
+
+                <svg class="artists__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </h3>
+
+              <p class="artists__card-desc description">
+                Плоская векторная графика
+              </p>
+            </div>
+          </a>
+
+          <a class="artists__card" href="./index.html" target="_blank" rel="noopener noreferrer">
+
+            <div class="artists__card-preview">
+              <img class="artists__card-artist-img" src="./assets/images/text_artist.webp" alt="Лиа @themidnightseas"
+                width="300" height="300" loading="lazy" decoding="async">
+
+              <img class="artists__card-poster-img" src="./assets/images/text_2.webp"
+                alt="Постер «Музы». Автор - Лиа @themidnightseas" width="150" height="150" loading="lazy"
+                decoding="async">
+            </div>
+
+            <div class="artists__card-info">
+              <h3 class="artists__card-title title">
+                Лиа @themidnightseas
+
+                <svg class="artists__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </h3>
+
+              <p class="artists__card-desc description">
+                Стилизация текстов и коллажей
+              </p>
+            </div>
+          </a>
+
+          <a class="artists__card" href="./index.html" target="_blank" rel="noopener noreferrer">
+
+            <div class="artists__card-preview">
+              <img class="artists__card-artist-img" src="./assets/images/real_artist.webp" alt="Артур @atbzdesign"
+                width="300" height="300" loading="lazy" decoding="async">
+
+              <img class="artists__card-poster-img" src="./assets/images/real_6.webp"
+                alt="Постер «Измученная поэтесса». Автор - Артур @atbzdesign" width="150" height="150" loading="lazy"
+                decoding="async">
+            </div>
+
+            <div class="artists__card-info">
+              <h3 class="artists__card-title title">
+                Артур @atbzdesign
+
+                <svg class="artists__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </h3>
+
+              <p class="artists__card-desc description">
+                Реалистичная графика и фотошоп
+              </p>
+            </div>
+          </a>
+
+        </div>
+        
+      </div>
+    </section>
 
 
   </main>

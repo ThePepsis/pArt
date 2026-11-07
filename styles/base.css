@@ -73,7 +73,7 @@ body {
 
 .title {
   padding: 5px 0 var(--s-3);
-  font-size: var(--f-size-3);
+  font-size: var(--f-size-4);
   font-family: 'Cormorant', serif;
   color: var(--black-co);
   font-weight: 500;
@@ -131,6 +131,33 @@ body {
 
   &:hover {
     outline: 2px solid var(--black-co);
+  }
+}
+
+.link--underline {
+  padding: 0 0 10px 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  position: relative;
+
+  &:hover {
+    color: var(--green-co);
+
+    &::after {
+      left: 100%;
+    }
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 1px;
+    background: var(--black-co);
+    transition: left .3s;
   }
 }
 

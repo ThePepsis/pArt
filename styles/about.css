@@ -14,8 +14,8 @@
   gap: 20px;
 }
 
-.about__title {
-  font-size: var(--f-size-4);
+.about__h3 {
+  font-size: var(--f-size-3);
 }
 
 .about__title span {
@@ -49,6 +49,7 @@
 }
 
 .about__accordion-title {
+  font-size: var(--f-size-3);
   list-style: none;
   padding: var(--s-2);
   transition: color .2s;
