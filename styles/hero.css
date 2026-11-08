@@ -1,5 +1,4 @@
 .hero__container {
-  padding: var(--s-1) 15px;
   display: flex;
   justify-content: space-between;
   align-items: start;
@@ -144,6 +143,30 @@
     max-width: 200px;
     padding: 8px;
   }
+}
+
+.card--1 {
+  z-index: 1;
+  translate: -75% -60%;
+  rotate: -10deg;
+  scale: 0.8;
+  background: var(--dark-green-co);
+}
+
+.card--2 {
+  z-index: 2;
+  translate: -30% -55%;
+  rotate: 5deg;
+  scale: 1;
+  background: var(--green-co);
+}
+
+.card--3 {
+  z-index: 3;
+  translate: -55% -20%;
+  rotate: -5deg;
+  scale: 0.7;
+  background: var(--black-co);
 }
 
 @media (max-width: 420px) {

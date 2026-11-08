@@ -13,6 +13,7 @@ body {
 }
 
 .container {
+  padding: var(--s-1) 15px;
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -87,7 +88,6 @@ body {
   font-weight: 500;
   letter-spacing: 1px;
   text-transform: uppercase;
-  /* text-wrap: nowrap; */
 }
 
 .description {
@@ -148,7 +148,7 @@ body {
       left: 100%;
     }
   }
-  
+
   &::after {
     content: '';
     position: absolute;
@@ -168,28 +168,4 @@ body {
 .arrow--rightup,
 .arrow--right {
   flex-shrink: 0;
-}
-
-.card--1 {
-  z-index: 1;
-  translate: -75% -60%;
-  rotate: -10deg;
-  scale: 0.8;
-  background: var(--dark-green-co);
-}
-
-.card--2 {
-  z-index: 2;
-  translate: -30% -55%;
-  rotate: 5deg;
-  scale: 1;
-  background: var(--green-co);
-}
-
-.card--3 {
-  z-index: 3;
-  translate: -55% -20%;
-  rotate: -5deg;
-  scale: 0.7;
-  background: var(--black-co);
 }

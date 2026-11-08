@@ -1,5 +1,4 @@
 .artists__container {
-  padding: var(--s-1) 15px;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -17,6 +16,7 @@
 }
 
 .artists__cards {
+  padding: 0 15px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -33,11 +33,11 @@
   &:hover {
     box-shadow: 0 0 40px -15px var(--green-co);
 
-    &:hover .artists__card-artist-img {
+    .artists__card-artist-img {
       filter: saturate(1);
     }
 
-    &:hover .artists__card-poster-img {
+    .artists__card-poster-img {
       rotate: 0deg;
     }
   }
@@ -88,7 +88,7 @@
 @media (max-width: 768px) {
   .artists__header {
     flex-direction: column;
-    align-items: start;
+    justify-content: start;
   }
 
   .artists__cards {

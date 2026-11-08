@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="./styles/hero.css">
   <link rel="stylesheet" href="./styles/about.css">
   <link rel="stylesheet" href="./styles/artists.css">
+  <link rel="stylesheet" href="./styles/gallery.css">
 
   <title>pArt — авторские постеры</title>
 </head>
@@ -45,7 +46,7 @@
           </li>
 
           <li class="nav__list-item">
-            <a href="./index.html" class="nav__list-link">Галерея</a>
+            <a href="./index.html#gallery-id" class="nav__list-link">Галерея</a>
           </li>
 
           <li class="nav__list-item">
@@ -93,7 +94,7 @@
           </li>
 
           <li class="nav__list-item">
-            <a href="./index.html" class="nav__list-link">Галерея</a>
+            <a href="./index.html#gallery-id" class="nav__list-link">Галерея</a>
           </li>
 
           <li class="nav__list-item">
@@ -106,7 +107,7 @@
   </div>
 
 
-  <main>
+  <main class="main">
     <section class="hero">
       <div class="container hero__container">
 
@@ -140,7 +141,6 @@
           </div>
         </div>
 
-
         <div class="hero__preview">
           <span class="hero__preview-subtitle subtitle">
             НЕМНОГО ИСКУССТВА. НОВЫЙ ВЗГЛЯД НА МИР.
@@ -170,17 +170,19 @@
 
           </div>
         </div>
-      </div>
 
+      </div>
 
       <footer class="hero__slogan">
         <div class="hero__slogan-container container">
           <p class="hero__slogan-subtitle subtitle">
             НЕ ПРОСТО УКРАШЕНИЕ ДЛЯ СТЕНЫ.
           </p>
+
           <p class="hero__slogan-title title">
             То, в чём вы узнаёте себя.
           </p>
+
           <p class="hero__slogan-subtitle subtitle">
             ИСКУССТВО, КОТОРОЕ СБЛИЖАЕТ.
           </p>
@@ -419,7 +421,153 @@
           </a>
 
         </div>
-        
+
+      </div>
+    </section>
+
+
+    <section class="gallery" id="gallery-id">
+      <div class="gallery__container container">
+
+        <div class="gallery__header">
+
+          <div class="gallery__inner">
+            <span class="gallery__header-subtitle subtitle">
+              НАЙДИТЕ ТО, ЧТО ВАМ БЛИЗКО
+            </span>
+
+            <h2 class="gallery__header-title title">
+              Искусство, созвучное вам.
+            </h2>
+          </div>
+
+          <div class="gallery__inner">
+            <a class="gallery__header-link link--underline" href="#" target="_blank" rel="noopener noreferrer">
+              Открыть галерею
+
+              <svg class="gallery__header-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="gallery__cards">
+
+          <a class="gallery__card" href="./index.html" target="_blank" rel="noopener noreferrer">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="./assets/images/flat_6.webp"
+                  alt="Постер к фильму «Интерстеллар». Автор - Крис @Hritikdesign" width="200" height="200"
+                  loading="lazy" decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Интерстеллар
+                <span class="gallery__card-price">990₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Крис @Hritikdesign
+              </p>
+            </div>
+          </a>
+
+          <a class="gallery__card" href="./index.html" target="_blank" rel="noopener noreferrer">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="./assets/images/flat_7.webp"
+                  alt="Постер «Песец». Автор - Крис @Hritikdesign" width="200" height="200" loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Песец
+                <span class="gallery__card-price">690₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Крис @Hritikdesign
+              </p>
+            </div>
+          </a>
+
+          <a class="gallery__card" href="./index.html" target="_blank" rel="noopener noreferrer">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="./assets/images/text_6.webp"
+                  alt="Постер «Солёный воздух». Автор - Лиа @themidnightseas" width="200" height="200" loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Солёный воздух
+                <span class="gallery__card-price">890₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Лиа @themidnightseas
+              </p>
+            </div>
+          </a>
+
+          <a class="gallery__card" href="./index.html" target="_blank" rel="noopener noreferrer">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="./assets/images/real_8.webp"
+                  alt="Постер «Космическая любовь». Автор - Артур @atbzdesign" width=" 200" height="200" loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Космическая любовь
+                <span class="gallery__card-price">1990₽</span>
+              </h3>
+            </div>
+
+            <p class="gallery__card-desc description">
+              Артур @atbzdesign
+            </p>
+          </a>
+
+        </div>
       </div>
     </section>
 

@@ -2,10 +2,6 @@
   border-bottom: 1px solid var(--green-co);
 }
 
-.about__container {
-  padding: var(--s-1) 15px;
-}
-
 .about__wrapper {
   margin: 0 0 40px 0;
   display: grid;
