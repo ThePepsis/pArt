@@ -33,6 +33,8 @@
 
     --s-3: clamp(1rem, 0.5rem + 2vw, 2rem);
 
+    --s-4: clamp(0.5rem, 0.25rem + 2vw, 1rem);
+
     /* media breakpoints */
     /* --m-min: 428px;
     --m-sm: 576px;

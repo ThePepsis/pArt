@@ -1,0 +1,31 @@
+.info {
+  border-top: 1px solid var(--green-co);
+}
+
+.info__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 60px 30px;
+}
+
+.info__wrapper {
+  max-width: 390px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.info__title {
+  font-size: var(--f-size-3);
+}
+
+.info__subtitle {
+  color: var(--dark-green-co);
+}
+
+@media (max-width: 768px) {
+  .info__container {
+    flex-direction: column;
+  }
+}
