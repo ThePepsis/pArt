@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="./styles/artists.css">
   <link rel="stylesheet" href="./styles/gallery.css">
   <link rel="stylesheet" href="./styles/info.css">
+  <link rel="stylesheet" href="./styles/footer.css">
 
   <title>pArt — авторские постеры</title>
 </head>
@@ -51,7 +52,7 @@
           </li>
 
           <li class="nav__list-item">
-            <a href="./index.html" class="nav__list-link">Контакты</a>
+            <a href="./index.html#contacts-id" class="nav__list-link">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -71,41 +72,40 @@
       </div>
 
     </div>
-  </header>
 
+    <div class="mob-menu" id="mob-menu-id" popover="auto">
+      <div class="mob-menu__inner">
 
-  <div class="mob-menu" id="mob-menu-id" popover="auto">
-    <div class="mob-menu__inner">
+        <button class="mob-menu__close" type="button" popovertarget="mob-menu-id" popovertargetaction="hide"
+          aria-label="Закрыть меню навигации">
+          <svg class="mob-menu__close-icon" width="25" height="22" aria-hidden="true">
+            <use href="./assets/icons/sprites.svg#cross-icon"></use>
+          </svg>
+        </button>
 
-      <button class="mob-menu__close" type="button" popovertarget="mob-menu-id" popovertargetaction="hide"
-        aria-label="Закрыть меню навигации">
-        <svg class="mob-menu__close-icon" width="25" height="22" aria-hidden="true">
-          <use href="./assets/icons/sprites.svg#cross-icon"></use>
-        </svg>
-      </button>
+        <nav class="nav" aria-label="Мобильная навигация">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="./index.html#about-id" class="nav__list-link">О pArt</a>
+            </li>
 
-      <nav class="nav" aria-label="Мобильная навигация">
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a href="./index.html#about-id" class="nav__list-link">О pArt</a>
-          </li>
+            <li class="nav__list-item">
+              <a href="./index.html#artists-id" class="nav__list-link">Художники</a>
+            </li>
 
-          <li class="nav__list-item">
-            <a href="./index.html#artists-id" class="nav__list-link">Художники</a>
-          </li>
+            <li class="nav__list-item">
+              <a href="./index.html#gallery-id" class="nav__list-link">Галерея</a>
+            </li>
 
-          <li class="nav__list-item">
-            <a href="./index.html#gallery-id" class="nav__list-link">Галерея</a>
-          </li>
+            <li class="nav__list-item">
+              <a href="./index.html#contacts-id" class="nav__list-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-          <li class="nav__list-item">
-            <a href="./index.html" class="nav__list-link">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-
+      </div>
     </div>
-  </div>
+  </header>
 
 
   <main class="main">
@@ -128,13 +128,15 @@
           </p>
 
           <div class="hero__content-links">
-            <a href="./index.html" class="hero__content-link button button--dark">Смотреть галерею
+            <a href="./index.html" class="hero__content-link button button--dark" target="_blank"
+              rel="noopener noreferrer">Смотреть галерею
               <svg class="hero__content-link-icon arrow--rightup" width="18" height="18" aria-hidden="true">
                 <use href="./assets/icons/sprites.svg#arrow-icon"></use>
               </svg>
             </a>
 
-            <a href="./index.html" class="hero__content-link button button--light">Знакомство с художниками
+            <a href="./index.html" class="hero__content-link button button--light" target="_blank"
+              rel="noopener noreferrer">Знакомство с художниками
               <svg class="hero__content-link-icon arrow--right" width="18" height="18" aria-hidden="true">
                 <use href="./assets/icons/sprites.svg#arrow-icon"></use>
               </svg>
@@ -623,6 +625,104 @@
 
 
   </main>
+
+
+  <footer class="footer" id="contacts-id">
+    <div class="footer__container container">
+      <nav class="footer__nav">
+
+        <div class="footer__nav-inner">
+          <a href="./index.html" class="logo" aria-label="pArt — на главную">
+            <svg class="logo__icon" width="63" height="44" aria-hidden="true">
+              <use href="./assets/icons/sprites.svg#logo-icon"></use>
+            </svg>
+          </a>
+
+          <p class="footer__nav-desc description">
+            Немного искусства. Много смысла.
+          </p>
+        </div>
+
+        <div class="footer__nav-inner">
+          <span class="footer__nav-subtitle subtitle">ОТКРЫВАЙТЕ</span>
+          <ul class="footer__nav-list">
+
+            <li class="footer__nav-item">
+              <a href="./index.html#artists-id" class="footer__nav-link">Художники</a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="./index.html#gallery-id" class="footer__nav-link">Галерея</a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="./index.html#about-id" class="footer__nav-link">Наша история</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__nav-inner">
+          <span class="footer__nav-subtitle subtitle">НАПИШИТЕ НАМ</span>
+          <ul class="footer__nav-list">
+
+            <li class="footer__nav-item">
+              <a href="mailto:hello@part.gallery" class="footer__nav-link">hello@part.gallery</a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="./index.html#" class="footer__nav-link">
+                Связаться с нами
+                <svg class="footer__nav-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                  <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__nav-inner">
+          <span class="footer__nav-subtitle subtitle">ВДОХНОВЛЯЙТЕСЬ</span>
+          <ul class="footer__nav-list">
+
+            <li class="footer__nav-item">
+              <a href="https://www.instagram.com" class="footer__nav-link" target="_blank" rel="noopener noreferrer">
+                Instagram
+                <svg class="footer__nav-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                  <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="https://www.pinterest.com" class="footer__nav-link" target="_blank" rel="noopener noreferrer">
+                Pinterest
+                <svg class="footer__nav-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                  <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </nav>
+
+      <div class="footer__wrapper">
+        <p class="footer__desc description">
+          © 2026 pArt. Создано из любви к искусству.
+        </p>
+
+        <a href="./index.html#hero-id" class="footer__link link--underline">
+          Наверх
+          <svg class="footer__icon arrow--rightup" width="18" height="18" aria-hidden="true">
+            <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

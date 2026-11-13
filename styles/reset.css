@@ -68,6 +68,10 @@ textarea {
   resize: vertical;
 }
 
+address {
+  font-style: normal;
+}
+
 button {
   background: none;
   border: none;
