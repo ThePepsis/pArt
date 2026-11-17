@@ -8,10 +8,13 @@
 }
 
 .footer__wrapper {
+  margin: 20px 0 0 0;
+  padding: var(--s-4) 0;
   display: flex;
   justify-content: space-between;
   align-items: start;
   gap: 10px;
+  border-top: 1px solid var(--green-co);
 }
 
 .footer__nav {
@@ -42,12 +45,6 @@
   &:hover {
     color: var(--green-co);
   }
-}
-
-.footer__wrapper {
-  margin: 20px 0 0 0;
-  border-top: 1px solid var(--green-co);
-  padding: var(--s-4) 0;
 }
 
 .footer__desc {

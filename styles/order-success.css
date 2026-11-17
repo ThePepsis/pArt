@@ -1,0 +1,32 @@
+.success__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--s-2);
+  text-align: center;
+}
+
+.success__icon-wrapper {
+  padding: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--green-co);
+}
+
+.success__icon {
+  fill: var(--green-co);
+}
+
+.success__title {
+  font-size: var(--f-size-5);
+}
+
+.success__btn {
+  width: min(100%, 400px);
+}
+
+@media (max-width: 768px) {
+  .success__title {
+    font-size: var(--f-size-4);
+  }
+}

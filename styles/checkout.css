@@ -1,0 +1,55 @@
+.checkout {
+  border-top: 1px solid var(--green-co);
+}
+
+.checkout__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 100px 30px;
+}
+
+.checkout__inner {
+  width: min(100%, 500px);
+}
+
+.checkout__total {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0 0 var(--s-2) 0;
+}
+
+.checkout__text {
+  font-size: var(--f-size-2);
+  font-family: 'Manrope', sans-serif;
+  color: var(--black-co);
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.checkout__price {
+  font-size: var(--f-size-4);
+  font-family: 'Cormorant', serif;
+  color: var(--black-co);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.checkout__link {
+  margin: 0 0 var(--s-2) 0;
+}
+
+.checkout__form {
+  margin: var(--s-2) auto;
+  width: min(100%, 700px);
+}
+
+@media (max-width: 768px) {
+
+  .checkout__container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
