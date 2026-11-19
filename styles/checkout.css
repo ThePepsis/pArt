@@ -45,6 +45,115 @@
   width: min(100%, 700px);
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.form__box {
+  flex-grow: 1;
+}
+
+.form__wrapper {
+  margin: 5px 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+
+.form__label {
+  display: block;
+  font-size: var(--f-size-2);
+  font-family: 'Manrope', sans-serif;
+  color: var(--black-co);
+  font-weight: 500;
+}
+
+.form__input,
+.form__textarea,
+.form__select {
+  width: 100%;
+  margin: 5px 0 var(--s-2) 0;
+  padding: 15px;
+  background: var(--white-co);
+  border: 1px solid var(--green-co);
+  font-family: 'Manrope', sans-serif;
+  font-size: var(--f-size-2);
+  font-weight: 400;
+  color: var(--black-co);
+  outline: none;
+  border-radius: 0;
+
+  &::placeholder {
+    font-family: 'Manrope', sans-serif;
+    font-size: var(--f-size-2);
+    color: var(--green-co);
+    font-weight: 300;
+    opacity: 1;
+  }
+
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    border-color: var(--black-co);
+  }
+}
+
+.form__input:-webkit-autofill,
+.form__input:-webkit-autofill:hover,
+.form__input:-webkit-autofill:focus {
+  /* перекрашивает фон через гигантскую внутреннюю тень */
+  -webkit-box-shadow: 0 0 0px 1000px var(--white-co) inset;
+
+  /* перекрашивает сам текст */
+  -webkit-text-fill-color: var(--black-co);
+
+  /* для Safari задерживает изменение фона на 5000 секунд */
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.form__input[type="file"] {
+  background: var(--beige-co);
+  border: 1px dashed var(--green-co);
+  cursor: pointer;
+}
+
+.form__input[type="file"]::file-selector-button {
+  display: none;
+}
+
+.form__textarea {
+  min-height: 120px;
+}
+
+.form__checkbox {
+  accent-color: var(--green-co);
+  width: 15px;
+  height: 15px;
+}
+
+.form__label--rights {
+  font-size: var(--f-size-1);
+  font-weight: 400;
+
+  &:hover {
+    cursor: pointer;
+    color: var(--dark-green-co);
+  }
+}
+
+.form__label-link {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
 
   .checkout__container {

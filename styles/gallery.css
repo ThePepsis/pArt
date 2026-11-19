@@ -91,10 +91,6 @@
   hyphens: auto;
 }
 
-.gallery__header-description {
-  margin: 0 0 10px 0;
-}
-
 @media (max-width: 992px) {
   .gallery__header {
     flex-direction: column;

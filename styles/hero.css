@@ -188,3 +188,9 @@
     display: none;
   }
 }
+
+@media (max-width: 371px) {
+  .hero__content-subtitle::before {
+    top: 20%;
+  }
+}

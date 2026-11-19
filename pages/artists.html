@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/artists.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+
+  <title>pArt: Художники</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+
+      <a href="../index.html" class="logo" aria-label="pArt — на главную">
+        <svg class="logo__icon" width="63" height="44" aria-hidden="true">
+          <use href="../assets/icons/sprites.svg#logo-icon"></use>
+        </svg>
+      </a>
+
+      <nav class="header__nav nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="../index.html#about-id" class="nav__list-link">О pArt</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="../index.html#artists-id" class="nav__list-link">Художники</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="../index.html#gallery-id" class="nav__list-link">Галерея</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="../index.html#contacts-id" class="nav__list-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__inner">
+        <a href="./cart.html" class="header__cart" aria-label="Перейти в корзину товаров">
+          <svg class="logo__icon" width="27" height="22" aria-hidden="true">
+            <use href="../assets/icons/sprites.svg#cart-icon"></use>
+          </svg>
+        </a>
+
+        <button class="header__burger" type="button" popovertarget="mob-menu-id" aria-label="Открыть меню навигации">
+          <svg class="header__burger-icon" width="27" height="22" aria-hidden="true">
+            <use href="../assets/icons/sprites.svg#burger-icon"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="mob-menu" id="mob-menu-id" popover="auto">
+      <div class="mob-menu__inner">
+
+        <button class="mob-menu__close" type="button" popovertarget="mob-menu-id" popovertargetaction="hide"
+          aria-label="Закрыть меню навигации">
+          <svg class="mob-menu__close-icon" width="25" height="22" aria-hidden="true">
+            <use href="../assets/icons/sprites.svg#cross-icon"></use>
+          </svg>
+        </button>
+
+        <nav class="nav" aria-label="Мобильная навигация">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="../index.html#about-id" class="nav__list-link">О pArt</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="../index.html#artists-id" class="nav__list-link">Художники</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="../index.html#gallery-id" class="nav__list-link">Галерея</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="../index.html#contacts-id" class="nav__list-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main" id="main">
+  
+  </main>
+
+
+  <footer class="footer" id="contacts-id">
+    <div class="footer__container container">
+      <nav class="footer__nav">
+
+        <div class="footer__nav-inner">
+          <a href="../index.html" class="logo" aria-label="pArt — на главную">
+            <svg class="logo__icon" width="63" height="44" aria-hidden="true">
+              <use href="../assets/icons/sprites.svg#logo-icon"></use>
+            </svg>
+          </a>
+
+          <p class="footer__nav-desc description">
+            Немного искусства. Много смысла.
+          </p>
+        </div>
+
+        <div class="footer__nav-inner">
+          <span class="footer__nav-subtitle subtitle">ОТКРЫВАЙТЕ</span>
+          <ul class="footer__nav-list">
+
+            <li class="footer__nav-item">
+              <a href="../index.html#artists-id" class="footer__nav-link">Художники</a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="../index.html#gallery-id" class="footer__nav-link">Галерея</a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="../index.html#about-id" class="footer__nav-link">Наша история</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__nav-inner">
+          <span class="footer__nav-subtitle subtitle">НАПИШИТЕ НАМ</span>
+          <ul class="footer__nav-list">
+
+            <li class="footer__nav-item">
+              <a href="mailto:hello@part.gallery" class="footer__nav-link">hello@part.gallery</a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="../index.html" class="footer__nav-link">
+                Связаться с нами
+                <svg class="footer__nav-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__nav-inner">
+          <span class="footer__nav-subtitle subtitle">ВДОХНОВЛЯЙТЕСЬ</span>
+          <ul class="footer__nav-list">
+
+            <li class="footer__nav-item">
+              <a href="https://www.instagram.com" class="footer__nav-link" target="_blank" rel="noopener noreferrer">
+                Instagram
+                <svg class="footer__nav-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="https://www.pinterest.com" class="footer__nav-link" target="_blank" rel="noopener noreferrer">
+                Pinterest
+                <svg class="footer__nav-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </nav>
+
+      <div class="footer__wrapper">
+        <p class="footer__desc description">
+          © 2026 pArt. Создано из любви к искусству.
+        </p>
+
+        <a href="#main" class="footer__link link--underline">
+          Наверх
+          <svg class="footer__icon arrow--rightup" width="18" height="18" aria-hidden="true">
+            <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

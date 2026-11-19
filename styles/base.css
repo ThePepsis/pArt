@@ -80,54 +80,6 @@ body {
   }
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.form__inner {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  gap: 10px;
-}
-
-.form__label {
-  font-size: var(--f-size-2);
-  font-family: 'Manrope', sans-serif;
-  color: var(--black-co);
-  font-weight: 500;
-}
-
-.form__label--rights {
-  font-size: var(--f-size-1);
-  font-weight: 400;
-
-  &:hover {
-    cursor: pointer;
-    color: var(--dark-green-co);
-  }
-}
-
-.form__label-link {
-  text-decoration: underline;
-}
-
-.form__input {
-  margin: 0 0 var(--s-2) 0;
-  padding: 15px;
-  background: var(--white-co);
-  border: 1px solid var(--green-co);
-
-  &::placeholder {
-    font-size: var(--f-size-2);
-    font-family: 'Manrope', sans-serif;
-    color: var(--green-co);
-    font-weight: 100;
-  }
-}
-
 .title {
   padding: 5px 0 var(--s-3);
   font-size: var(--f-size-4);

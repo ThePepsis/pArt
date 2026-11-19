@@ -12,16 +12,16 @@
     --f-size-0: clamp(0.425rem, 0.25rem + 0.4vw, 0.55rem);
 
     /* 11-13px */
-    --f-size-1: clamp(0.7rem, 0.5rem + 0.5vw, 0.8rem);
+    --f-size-1: clamp(0.7rem, 0.25rem + 0.5vw, 0.8rem);
 
     /* 14-16px */
-    --f-size-2: clamp(0.85rem, 0.5rem + 0.8vw, 1rem);
+    --f-size-2: clamp(0.85rem, 0.5rem + 0.5vw, 1rem);
 
     /* 20-32px */
-    --f-size-3: clamp(1.25rem, 0.5rem + 2.5vw, 2rem);
+    --f-size-3: clamp(1.25rem, 0.5rem + 2vw, 2rem);
 
     /* 30-56px */
-    --f-size-4: clamp(1.85rem, 0.5rem + 4vw, 3.5rem);
+    --f-size-4: clamp(1.85rem, 0.5rem + 3vw, 3.5rem);
 
     /* 80-104px */
     --f-size-5: clamp(5rem, 0.5rem + 7.7vw, 6.5rem);
