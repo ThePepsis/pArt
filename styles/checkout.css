@@ -16,6 +16,7 @@
 .checkout__total {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 10px;
   margin: 0 0 var(--s-2) 0;
 }
@@ -124,10 +125,6 @@
   background: var(--beige-co);
   border: 1px dashed var(--green-co);
   cursor: pointer;
-}
-
-.form__input[type="file"]::file-selector-button {
-  display: none;
 }
 
 .form__textarea {

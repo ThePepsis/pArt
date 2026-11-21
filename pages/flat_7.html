@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/poster.css">
+  <link rel="stylesheet" href="../styles/checkout.css">
+  <link rel="stylesheet" href="../styles/gallery.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+
+  <title>pArt: Постер</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+
+      <a href="../index.html" class="logo" aria-label="pArt — на главную">
+        <svg class="logo__icon" width="63" height="44" aria-hidden="true">
+          <use href="../assets/icons/sprites.svg#logo-icon"></use>
+        </svg>
+      </a>
+
+      <nav class="header__nav nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="../index.html#about-id" class="nav__list-link">О pArt</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="../index.html#artists-id" class="nav__list-link">Художники</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="../index.html#gallery-id" class="nav__list-link">Галерея</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="../index.html#contacts-id" class="nav__list-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__inner">
+        <a href="./cart.html" class="header__cart" aria-label="Перейти в корзину товаров">
+          <svg class="logo__icon" width="27" height="22" aria-hidden="true">
+            <use href="../assets/icons/sprites.svg#cart-icon"></use>
+          </svg>
+        </a>
+
+        <button class="header__burger" type="button" popovertarget="mob-menu-id" aria-label="Открыть меню навигации">
+          <svg class="header__burger-icon" width="27" height="22" aria-hidden="true">
+            <use href="../assets/icons/sprites.svg#burger-icon"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="mob-menu" id="mob-menu-id" popover="auto">
+      <div class="mob-menu__inner">
+
+        <button class="mob-menu__close" type="button" popovertarget="mob-menu-id" popovertargetaction="hide"
+          aria-label="Закрыть меню навигации">
+          <svg class="mob-menu__close-icon" width="25" height="22" aria-hidden="true">
+            <use href="../assets/icons/sprites.svg#cross-icon"></use>
+          </svg>
+        </button>
+
+        <nav class="nav" aria-label="Мобильная навигация">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="../index.html#about-id" class="nav__list-link">О pArt</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="../index.html#artists-id" class="nav__list-link">Художники</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="../index.html#gallery-id" class="nav__list-link">Галерея</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="../index.html#contacts-id" class="nav__list-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main" id="main">
+
+    <section class="poster" id="poster-id">
+      <div class="poster__container container">
+
+        <a href="./cart.html" class="poster__link link--comeback">
+          <svg class="poster__link-icon arrow--left" width="18" height="18" aria-hidden="true">
+            <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+          </svg>
+          Вернуться в корзину
+        </a>
+
+        <div class="poster__wrapper">
+
+          <div class="poster__preview">
+            <img class="poster__preview-img" src="../assets/images/flat_7.webp"
+              alt="Постер «Песец». Автор - Крис @Hritikdesign" width="500" height=500" loading="lazy" decoding="async">
+          </div>
+
+          <div class="poster__inner">
+            <span class="poster__subtitle">
+              Векторная графика / Пиксель-арт
+            </span>
+
+            <h1 class="poster__title title">
+              «Песец»
+            </h1>
+
+            <a href="./@Hritikdesign.html" class="poster__author">
+              <div class="poster__author-preview">
+                <img class="poster__author-img" src="../assets/images/flat_artist.webp"
+                  alt="На фото художник Крис @Hritikdesign" width="80" height="80" decoding="async" loading="lazy">
+              </div>
+
+              <div class="poster__author-info">
+                <span class="poster__author-name">
+                  Автор: Крис @Hritikdesign
+                </span>
+
+                <svg class="poster__author-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </a>
+
+            <p class="poster__desc description">
+              Уютный зимний мир, вдохновлённый Minecraft, в котором знакомые пиксельные формы сочетаются с нежными
+              голубыми и песочными оттенками. Постер добавит интерьеру немного ностальгии и игрового настроения,
+              напоминая
+              о любимых приключениях и волшебстве зимы.
+            </p>
+
+            <div class="poster__checkout checkout">
+              <div class="checkout__total">
+                <span class="checkout__price">
+                  690 ₽
+                </span>
+
+                <span class="checkout__text">
+                  Искусство для вашей жизни.
+                </span>
+              </div>
+
+
+              <a href="./checkout.html" class="poster__checkout-btn button button--dark">
+                Купить работу
+                <svg class="poster__checkout-icon" width="27" height="22" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#cart-icon"></use>
+                </svg>
+              </a>
+
+              <a href="./@Hritikdesign.html" class="poster__checkout-btn button button--light">
+                Об авторе
+                <svg class="poster__checkout-icon arrow--rightup" width="27" height="22" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </a>
+
+              <p class="poster__checkout-desc description">
+                Каждая покупка — поддержка независимого художника.
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- <section class="gallery" id="gallery-id">
+      <div class="gallery__container container">
+
+        <div class="gallery__header">
+
+          <div class="gallery__inner">
+            <span class="gallery__header-subtitle subtitle">
+              НАЙДИТЕ ТО, ЧТО ВАМ БЛИЗКО
+            </span>
+
+            <h2 class="gallery__header-title title">
+              Искусство, созвучное вам.
+            </h2>
+          </div>
+
+          <div class="gallery__inner">
+            <a class="gallery__header-link link--underline" href="./pages/gallery.html">
+              Открыть галерею
+
+              <svg class="gallery__header-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="gallery__cards">
+
+          <a class="gallery__card" href="./index.html">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="./assets/images/flat_6.webp"
+                  alt="Постер к фильму «Интерстеллар». Автор - Крис @Hritikdesign" width="200" height="200"
+                  loading="lazy" decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Интерстеллар
+                <span class="gallery__card-price">990₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Крис @Hritikdesign
+              </p>
+            </div>
+          </a>
+
+          <a class="gallery__card" href="./index.html">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="./assets/images/flat_7.webp"
+                  alt="Постер «Песец». Автор - Крис @Hritikdesign" width="200" height="200" loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Песец
+                <span class="gallery__card-price">690₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Крис @Hritikdesign
+              </p>
+            </div>
+          </a>
+
+          <a class="gallery__card" href="./index.html">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="./assets/images/text_6.webp"
+                  alt="Постер «Солёный воздух». Автор - Лиа @themidnightseas" width="200" height="200" loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Солёный воздух
+                <span class="gallery__card-price">890₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Лиа @themidnightseas
+              </p>
+            </div>
+          </a>
+
+          <a class="gallery__card" href="./index.html">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="./assets/images/real_8.webp"
+                  alt="Постер «Космическая любовь». Автор - Артур @atbzdesign" width="200" height="200" loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="./assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Космическая любовь
+                <span class="gallery__card-price">1990₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Артур @atbzdesign
+              </p>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+
+  <footer class="footer" id="contacts-id">
+    <div class="footer__container container">
+      <nav class="footer__nav">
+
+        <div class="footer__nav-inner">
+          <a href="../index.html" class="logo" aria-label="pArt — на главную">
+            <svg class="logo__icon" width="63" height="44" aria-hidden="true">
+              <use href="../assets/icons/sprites.svg#logo-icon"></use>
+            </svg>
+          </a>
+
+          <p class="footer__nav-desc description">
+            Немного искусства. Много смысла.
+          </p>
+        </div>
+
+        <div class="footer__nav-inner">
+          <span class="footer__nav-subtitle subtitle">ОТКРЫВАЙТЕ</span>
+          <ul class="footer__nav-list">
+
+            <li class="footer__nav-item">
+              <a href="../index.html#artists-id" class="footer__nav-link">Художники</a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="../index.html#gallery-id" class="footer__nav-link">Галерея</a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="../index.html#about-id" class="footer__nav-link">Наша история</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__nav-inner">
+          <span class="footer__nav-subtitle subtitle">НАПИШИТЕ НАМ</span>
+          <ul class="footer__nav-list">
+
+            <li class="footer__nav-item">
+              <a href="mailto:hello@part.gallery" class="footer__nav-link">hello@part.gallery</a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="../index.html" class="footer__nav-link">
+                Связаться с нами
+                <svg class="footer__nav-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__nav-inner">
+          <span class="footer__nav-subtitle subtitle">ВДОХНОВЛЯЙТЕСЬ</span>
+          <ul class="footer__nav-list">
+
+            <li class="footer__nav-item">
+              <a href="https://www.instagram.com" class="footer__nav-link" target="_blank" rel="noopener noreferrer">
+                Instagram
+                <svg class="footer__nav-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="https://www.pinterest.com" class="footer__nav-link" target="_blank" rel="noopener noreferrer">
+                Pinterest
+                <svg class="footer__nav-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </nav>
+
+      <div class="footer__wrapper">
+        <p class="footer__desc description">
+          © 2026 pArt. Создано из любви к искусству.
+        </p>
+
+        <a href="#main" class="footer__link link--underline">
+          Наверх
+          <svg class="footer__icon arrow--rightup" width="18" height="18" aria-hidden="true">
+            <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

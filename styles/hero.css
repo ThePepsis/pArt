@@ -1,7 +1,7 @@
 .hero__container {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: stretch;
   gap: 40px;
 }
 
@@ -84,12 +84,11 @@
   max-width: 280px;
   aspect-ratio: 3 / 4;
   padding: 10px;
-  transition: translate 0.3s, rotate 0.3s, scale 0.3s;
+  transition: translate 0.3s, rotate 0.3s;
 
   &:hover,
   &:focus-visible {
     rotate: 0deg;
-    scale: 1.05;
     z-index: 10;
   }
 }
