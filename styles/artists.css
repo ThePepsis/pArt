@@ -8,7 +8,11 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
-  gap: 30px;
+  gap: 0 30px;
+}
+
+.artists__header-desc {
+  max-width: 300px;
 }
 
 .artists__cards {

@@ -1,3 +1,7 @@
+.poster__container {
+  padding: var(--s-2) 15px var(--s-1);
+}
+
 .poster__wrapper {
   margin: var(--s-3) 0 0 0;
   display: flex;
@@ -37,10 +41,6 @@
   color: var(--black-co);
   font-weight: 500;
   letter-spacing: 1.5px;
-}
-
-.poster__title {
-  font-size: var(--f-size-5);
 }
 
 .poster__author {
