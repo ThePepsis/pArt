@@ -59,6 +59,7 @@
 }
 
 .form__box {
+  width: 100%;
   flex-grow: 1;
 }
 
@@ -116,9 +117,6 @@
 
   /* перекрашивает сам текст */
   -webkit-text-fill-color: var(--black-co);
-
-  /* для Safari задерживает изменение фона на 5000 секунд */
-  transition: background-color 5000s ease-in-out 0s;
 }
 
 .form__input[type="file"] {
@@ -157,5 +155,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .form__inner {
+    flex-direction: column;
+    align-items: start;
   }
 }

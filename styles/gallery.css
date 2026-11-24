@@ -33,7 +33,8 @@
   max-height: 400px;
   transition: box-shadow .3s;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     box-shadow: 0 0 40px -15px var(--green-co);
 
     .gallery__card-block {

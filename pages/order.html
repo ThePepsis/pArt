@@ -154,6 +154,7 @@
             Ваш художник
           </label>
           <select name="artist" id="artist" class="form__select" required>
+            <option value="" selected disabled>Выберите художника</option>
             <option value="hritikdesign">Крис @Hritikdesign</option>
             <option value="themidnightseas">Лиа @themidnightseas</option>
             <option value="atbzdesign">Артур @atbzdesign</option>
@@ -168,7 +169,7 @@
               (необязательно)
             </span>
           </div>
-          <input type="file" class="form__input" name="user-file" id="file" placeholder="Не выбран ни один файл">
+          <input type="file" class="form__input" name="user-file" id="file" accept=".jpg,.jpeg,.png,.pdf">
 
           <button type="submit" class="form__btn button button--dark">
             Подтвердить заказ
