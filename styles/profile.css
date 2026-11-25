@@ -1,7 +1,14 @@
 .profile__banner {
   width: 100%;
+  overflow: hidden;
   aspect-ratio: 75 / 14;
-  background: url('../assets/images/flat_banner.webp') center / cover no-repeat;
+}
+
+.profile__banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .profile__container {

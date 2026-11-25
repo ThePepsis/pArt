@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" href="../assets/icons/favicon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="../styles/tokens.css">
+  <link rel="stylesheet" href="../styles/reset.css">
+  <link rel="stylesheet" href="../styles/base.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/profile.css">
+  <link rel="stylesheet" href="../styles/gallery.css">
+  <link rel="stylesheet" href="../styles/feedback.css">
+  <link rel="stylesheet" href="../styles/artists.css">
+  <link rel="stylesheet" href="../styles/footer.css">
+
+  <title>pArt: Артур @atbzdesign</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+
+      <a href="../index.html" class="logo" aria-label="pArt — на главную">
+        <svg class="logo__icon" width="63" height="44" aria-hidden="true">
+          <use href="../assets/icons/sprites.svg#logo-icon"></use>
+        </svg>
+      </a>
+
+      <nav class="header__nav nav" aria-label="Основная навигация">
+        <ul class="nav__list">
+          <li class="nav__list-item">
+            <a href="../index.html#about-id" class="nav__list-link">О pArt</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="../index.html#artists-id" class="nav__list-link">Художники</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="../index.html#gallery-id" class="nav__list-link">Галерея</a>
+          </li>
+
+          <li class="nav__list-item">
+            <a href="../index.html#contacts-id" class="nav__list-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__inner">
+        <a href="./cart.html" class="header__cart" aria-label="Перейти в корзину товаров">
+          <svg class="logo__icon" width="27" height="22" aria-hidden="true">
+            <use href="../assets/icons/sprites.svg#cart-icon"></use>
+          </svg>
+        </a>
+
+        <button class="header__burger" type="button" popovertarget="mob-menu-id" aria-label="Открыть меню навигации">
+          <svg class="header__burger-icon" width="27" height="22" aria-hidden="true">
+            <use href="../assets/icons/sprites.svg#burger-icon"></use>
+          </svg>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="mob-menu" id="mob-menu-id" popover="auto">
+      <div class="mob-menu__inner">
+
+        <button class="mob-menu__close" type="button" popovertarget="mob-menu-id" popovertargetaction="hide"
+          aria-label="Закрыть меню навигации">
+          <svg class="mob-menu__close-icon" width="25" height="22" aria-hidden="true">
+            <use href="../assets/icons/sprites.svg#cross-icon"></use>
+          </svg>
+        </button>
+
+        <nav class="nav" aria-label="Мобильная навигация">
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a href="../index.html#about-id" class="nav__list-link">О pArt</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="../index.html#artists-id" class="nav__list-link">Художники</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="../index.html#gallery-id" class="nav__list-link">Галерея</a>
+            </li>
+
+            <li class="nav__list-item">
+              <a href="../index.html#contacts-id" class="nav__list-link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+
+  <main class="main" id="main">
+    <section class="profile" id="profile-id">
+      <div class="profile__banner">
+        <img class="profile__banner-img" src="../assets/images/real_banner.webp"
+          alt="Баннер с информацией о художнике Артур @atbzdesign" width="2400" height="448" fetchpriority="high"
+          decoding="async">
+      </div>
+
+      <div class="profile__container container">
+
+        <a class="profile__comeback-link link--comeback" href="./artists.html">
+          <svg class="profile__comeback-icon arrow--left" width="18" height="18" aria-hidden="true">
+            <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+          </svg>
+          Все художники
+        </a>
+
+        <div class="profile__info">
+
+          <div class="profile__info-wrapper">
+
+            <div class="profile__info-preview">
+              <img class="profile__info-img" src="../assets/images/real_artist.webp"
+                alt="На фото художник Артур @atbzdesign" width="150" height="150" fetchpriority="high" decoding="async">
+            </div>
+
+            <div class="profile__info-inner">
+              <span class="profile__info-subtitle subtitle">
+                Нью-Йорк • 32 года
+              </span>
+
+              <h1 class="profile__info-title title">
+                Артур @atbzdesign
+              </h1>
+
+              <p class="profile__info-desc description">
+                Реалистичная графика • Фотошоп • Ретушь
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="profile__footer">
+          <p class="profile__footer-desc description">
+            Артур превращает фотографии в кинематографичные истории, создавая реалистичные кинопостеры с эффектной
+            цветокоррекцией и детальной ретушью. Вдохновляясь атмосферой кино, драматичными сюжетами и выразительными
+            образами, он создаёт визуальные композиции, которые захватывают внимание и превращают обычные кадры в
+            настоящие кинематографические сцены.
+          </p>
+
+          <div class="profile__footer-inner">
+            <a href="./order.html" class="profile__footer-link button button--dark">
+              Заказать авторскую работу
+              <svg class="profile__footer-link-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section class="gallery" id="gallery-id">
+      <div class="gallery__container container">
+
+        <div class="gallery__header">
+
+          <div class="gallery__inner">
+            <span class="gallery__header-subtitle subtitle">
+              автор этих работ
+            </span>
+
+            <h2 class="gallery__header-title title">
+              Личное портфолио.
+            </h2>
+          </div>
+
+          <div class="gallery__inner">
+            <span class="gallery__header-description description">
+              РАБОТ В НАЛИЧИИ: 8
+            </span>
+
+            <a class="gallery__header-link link--underline" href="./gallery.html">
+              Смотреть больше работ
+
+              <svg class="gallery__header-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="gallery__cards">
+
+          <a class="gallery__card" href="./real_8.html">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="../assets/images/real_8.webp"
+                  alt="Постер «Космическая любовь». Автор - Артур @atbzdesign" width="200" height="200" loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Космическая любовь
+                <span class="gallery__card-price">1990₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Артур @atbzdesign
+              </p>
+            </div>
+          </a>
+
+          <a class="gallery__card" href="./real_1.html">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="../assets/images/real_1.webp"
+                  alt="Постер «Эры». Автор - Артур @atbzdesign" width="200" height="200" loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Эры
+                <span class="gallery__card-price">990₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Артур @atbzdesign
+              </p>
+            </div>
+          </a>
+
+          <a class="gallery__card" href="./real_2.html">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="../assets/images/real_2.webp"
+                  alt="Постер «Судьба Офелии». Автор - Артур @atbzdesign" width="200" height="200" loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Судьба Офелии
+                <span class="gallery__card-price">1990₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Артур @atbzdesign
+              </p>
+            </div>
+          </a>
+
+          <a class="gallery__card" href="./real_3.html">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="../assets/images/real_3.webp"
+                  alt="Постер «Статуя». Автор - Артур @atbzdesign" width="200" height="200" loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Статуя
+                <span class="gallery__card-price">1090₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Артур @atbzdesign
+              </p>
+            </div>
+          </a>
+
+          <a class="gallery__card" href="./real_4.html">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="../assets/images/real_4.webp"
+                  alt="Постер «Офелия и кувшинки». Автор - Артур @atbzdesign" width="200" height="200" loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Офелия и кувшинки
+                <span class="gallery__card-price">1990₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Артур @atbzdesign
+              </p>
+            </div>
+          </a>
+
+          <a class="gallery__card" href="./real_5.html">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="../assets/images/real_5.webp"
+                  alt="Постер «Лучник». Автор - Артур @atbzdesign" width="200" height="200" loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Лучник
+                <span class="gallery__card-price">990₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Артур @atbzdesign
+              </p>
+            </div>
+          </a>
+
+          <a class="gallery__card" href="./real_6.html">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="../assets/images/real_6.webp"
+                  alt="Постер «Поэтесса». Автор - Артур @atbzdesign" width="200" height="200" loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Поэтесса
+                <span class="gallery__card-price">1990₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Артур @atbzdesign
+              </p>
+            </div>
+          </a>
+
+          <a class="gallery__card" href="./real_7.html">
+
+            <div class="gallery__card-preview">
+              <div class="gallery__card-wrapper">
+                <img class="gallery__card-img" src="../assets/images/real_7.webp"
+                  alt="Постер «Греческая богиня». Автор - Артур @atbzdesign" width="200" height="200" loading="lazy"
+                  decoding="async">
+              </div>
+
+              <div class="gallery__card-block">
+                <svg class="gallery__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </div>
+            </div>
+
+            <div class="gallery__card-info">
+              <h3 class="gallery__card-title">
+                Греческая богиня
+                <span class="gallery__card-price">1990₽</span>
+              </h3>
+
+              <p class="gallery__card-desc description">
+                Артур @atbzdesign
+              </p>
+            </div>
+          </a>
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="feedback" id="feedback-id">
+      <div class="feedback__container container">
+
+        <div class="feedback__header">
+          <h2 class="feedback__header-title title">Отзывы
+            <span>коллекционеров.</span>
+          </h2>
+
+          <a href="./feedback.html" class="feedback__header-desc description">
+            5,0 / 5 • 2 ОТЗЫВА
+          </a>
+        </div>
+
+        <div class="feedback__cards">
+
+          <div class="feedback__card">
+            <blockquote class="feedback__card-quote">
+              «Вживую работа ещё прекраснее. Цвета преобразили мой интерьер, а история её создания сделала покупку
+              по-настоящему особенной».
+            </blockquote>
+            <p class="feedback__card-author"> — Женя Ч.</p>
+            <p class="feedback__card-desc description">
+              Подтверждённая покупка • декабрь 2026
+            </p>
+          </div>
+
+          <div class="feedback__card">
+            <blockquote class="feedback__card-quote">
+              «Вживую работа ещё прекраснее. Цвета преобразили мой интерьер, а история её создания сделала покупку
+              по-настоящему особенной».
+            </blockquote>
+            <p class="feedback__card-author"> — Женя Ч.</p>
+            <p class="feedback__card-desc description">
+              Подтверждённая покупка • декабрь 2026
+            </p>
+          </div>
+
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <section class="artists" id="artists-id">
+      <div class="artists__container container">
+
+        <div class="artists__header">
+
+          <div class="artists__inner">
+            <span class="artists__header-subtitle subtitle">
+              ЗА КАЖДОЙ РАБОТОЙ — ЧЕЛОВЕК
+            </span>
+
+            <h2 class="artists__header-title title">
+              Другие авторы.
+            </h2>
+
+            <p class="artists__header-desc description">
+              Разные взгляды. Узнаваемый почерк. Общая любовь к творчеству.
+            </p>
+          </div>
+
+          <div class="artists__inner">
+            <a class="artists__header-link link--underline" href="./artists.html">
+              Все художники
+
+              <svg class="artists__header-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+              </svg>
+            </a>
+          </div>
+
+        </div>
+
+        <div class="artists__cards">
+
+          <a class="artists__card" href="./@Hritikdesign.html">
+
+            <div class="artists__card-preview">
+              <img class="artists__card-artist-img" src="../assets/images/flat_artist.webp" alt="Крис @Hritikdesign"
+                width="300" height="300" loading="lazy" decoding="async">
+
+              <img class="artists__card-poster-img" src="../assets/images/flat_5.webp"
+                alt="Постер к фильму «Дюна». Автор - Крис @Hritikdesign" width="150" height="150" loading="lazy"
+                decoding="async">
+            </div>
+
+            <div class="artists__card-info">
+              <h3 class="artists__card-title title">
+                Крис @Hritikdesign
+
+                <svg class="artists__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </h3>
+
+              <p class="artists__card-desc description">
+                Плоская векторная графика
+              </p>
+            </div>
+          </a>
+
+          <a class="artists__card" href="./@themidnightseas.html">
+
+            <div class="artists__card-preview">
+              <img class="artists__card-artist-img" src="../assets/images/text_artist.webp" alt="Лиа @themidnightseas"
+                width="300" height="300" loading="lazy" decoding="async">
+
+              <img class="artists__card-poster-img" src="../assets/images/text_2.webp"
+                alt="Постер «Музы». Автор - Лиа @themidnightseas" width="150" height="150" loading="lazy"
+                decoding="async">
+            </div>
+
+            <div class="artists__card-info">
+              <h3 class="artists__card-title title">
+                Лиа @themidnightseas
+
+                <svg class="artists__card-icon arrow--rightup" width="20" height="20" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </h3>
+
+              <p class="artists__card-desc description">
+                Стилизация текстов и коллажей
+              </p>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer" id="contacts-id">
+    <div class="footer__container container">
+      <nav class="footer__nav">
+
+        <div class="footer__nav-inner">
+          <a href="../index.html" class="logo" aria-label="pArt — на главную">
+            <svg class="logo__icon" width="63" height="44" aria-hidden="true">
+              <use href="../assets/icons/sprites.svg#logo-icon"></use>
+            </svg>
+          </a>
+
+          <p class="footer__nav-desc description">
+            Немного искусства. Много смысла.
+          </p>
+        </div>
+
+        <div class="footer__nav-inner">
+          <span class="footer__nav-subtitle subtitle">ОТКРЫВАЙТЕ</span>
+          <ul class="footer__nav-list">
+
+            <li class="footer__nav-item">
+              <a href="../index.html#artists-id" class="footer__nav-link">Художники</a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="../index.html#gallery-id" class="footer__nav-link">Галерея</a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="../index.html#about-id" class="footer__nav-link">Наша история</a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__nav-inner">
+          <span class="footer__nav-subtitle subtitle">НАПИШИТЕ НАМ</span>
+          <ul class="footer__nav-list">
+
+            <li class="footer__nav-item">
+              <a href="mailto:hello@part.gallery" class="footer__nav-link">hello@part.gallery</a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="../index.html" class="footer__nav-link">
+                Связаться с нами
+                <svg class="footer__nav-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <div class="footer__nav-inner">
+          <span class="footer__nav-subtitle subtitle">ВДОХНОВЛЯЙТЕСЬ</span>
+          <ul class="footer__nav-list">
+
+            <li class="footer__nav-item">
+              <a href="https://www.instagram.com" class="footer__nav-link" target="_blank" rel="noopener noreferrer">
+                Instagram
+                <svg class="footer__nav-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="footer__nav-item">
+              <a href="https://www.pinterest.com" class="footer__nav-link" target="_blank" rel="noopener noreferrer">
+                Pinterest
+                <svg class="footer__nav-icon arrow--rightup" width="18" height="18" aria-hidden="true">
+                  <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+      </nav>
+
+      <div class="footer__wrapper">
+        <p class="footer__desc description">
+          © 2026 pArt. Создано из любви к искусству.
+        </p>
+
+        <a href="#main" class="footer__link link--underline">
+          Наверх
+          <svg class="footer__icon arrow--rightup" width="18" height="18" aria-hidden="true">
+            <use href="../assets/icons/sprites.svg#arrow-icon"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
