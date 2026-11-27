@@ -22,8 +22,6 @@
 
 .poster__preview-img {
   width: min(100%, 500px);
-  height: auto;
-  aspect-ratio: 1 / 1;
   object-fit: contain;
   box-shadow: 0 0 15px -10px var(--black-co);
 }
@@ -96,10 +94,16 @@
 
 .poster__checkout-desc {
   text-align: center;
+  font-size: var(--f-size-1);
 }
 
 @media (max-width: 768px) {
   .poster__wrapper {
     flex-direction: column;
+  }
+
+  .poster__preview-img {
+    width: min(100%, 300px);
+    width: 300px;
   }
 }

@@ -80,8 +80,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 70%;
-  max-width: 280px;
+  width: min(70%, 280px);
   aspect-ratio: 3 / 4;
   padding: 10px;
   transition: translate 0.3s, rotate 0.3s;
